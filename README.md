@@ -20,7 +20,7 @@ If you are using Maven with [BOM][libraries-bom], add this to your pom.xml file
     <dependency>
       <groupId>com.google.cloud</groupId>
       <artifactId>libraries-bom</artifactId>
-      <version>4.3.0</version>
+      <version>4.4.1</version>
       <type>pom</type>
       <scope>import</scope>
     </dependency>
@@ -34,25 +34,25 @@ If you are using Maven with [BOM][libraries-bom], add this to your pom.xml file
 </dependencies>
 ```
 
-[//]: # ({x-version-update-start:google-cloud-securitycenter-settings:released})
-
 If you are using Maven without BOM, add this to your dependencies:
 
 ```xml
 <dependency>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-securitycenter-settings</artifactId>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
 </dependency>
 ```
 
+[//]: # ({x-version-update-start:google-cloud-securitycenter-settings:released})
+
 If you are using Gradle, add this to your dependencies
 ```Groovy
-compile 'com.google.cloud:google-cloud-securitycenter-settings:0.1.0'
+compile 'com.google.cloud:google-cloud-securitycenter-settings:0.2.0'
 ```
 If you are using SBT, add this to your dependencies
 ```Scala
-libraryDependencies += "com.google.cloud" % "google-cloud-securitycenter-settings" % "0.1.0"
+libraryDependencies += "com.google.cloud" % "google-cloud-securitycenter-settings" % "0.2.0"
 ```
 [//]: # ({x-version-update-end})
 

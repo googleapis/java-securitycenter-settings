@@ -1,5 +1,15 @@
 # Changelog
 
+### [0.2.1](https://www.github.com/googleapis/java-securitycenter-settings/compare/v0.2.0...v0.2.1) (2020-05-05)
+
+
+### Dependencies
+
+* update dependency com.google.api.grpc:proto-google-common-protos to v1.18.0 ([#47](https://www.github.com/googleapis/java-securitycenter-settings/issues/47)) ([06b9732](https://www.github.com/googleapis/java-securitycenter-settings/commit/06b9732fca4c1d1f81f2a2180ff22ada283bf466))
+* update dependency com.google.guava:guava-bom to v29 ([#28](https://www.github.com/googleapis/java-securitycenter-settings/issues/28)) ([c68ac9f](https://www.github.com/googleapis/java-securitycenter-settings/commit/c68ac9f9d7c90f59258ea944ce2aed8d25b7d4ab))
+* update dependency io.grpc:grpc-bom to v1.29.0 ([#41](https://www.github.com/googleapis/java-securitycenter-settings/issues/41)) ([a06b051](https://www.github.com/googleapis/java-securitycenter-settings/commit/a06b0511223b416efdfe8f288b846d53b2fca4bb))
+* update dependency org.threeten:threetenbp to v1.4.4 ([#43](https://www.github.com/googleapis/java-securitycenter-settings/issues/43)) ([884cef9](https://www.github.com/googleapis/java-securitycenter-settings/commit/884cef9c27655e022331dcc4b40fc1705f575de9))
+
 ## [0.2.0](https://www.github.com/googleapis/java-securitycenter-settings/compare/v0.1.0...v0.2.0) (2020-04-09)
 
 

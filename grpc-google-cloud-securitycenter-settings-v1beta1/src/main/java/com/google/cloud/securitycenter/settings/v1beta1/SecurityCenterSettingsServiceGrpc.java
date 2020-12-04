@@ -22,17 +22,7 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/**
- *
- *
- * <pre>
- * ## API Overview
- * The SecurityCenterSettingsService is a sub-api of
- * `securitycenter.googleapis.com`. The service provides methods to manage
- * Security Center Settings, and Component Settings for GCP organizations,
- * folders, projects, and clusters.
- * </pre>
- */
+/** */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments =
@@ -775,36 +765,11 @@ public final class SecurityCenterSettingsServiceGrpc {
     return SecurityCenterSettingsServiceFutureStub.newStub(factory, channel);
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * ## API Overview
-   * The SecurityCenterSettingsService is a sub-api of
-   * `securitycenter.googleapis.com`. The service provides methods to manage
-   * Security Center Settings, and Component Settings for GCP organizations,
-   * folders, projects, and clusters.
-   * </pre>
-   */
+  /** */
   public abstract static class SecurityCenterSettingsServiceImplBase
       implements io.grpc.BindableService {
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves the organizations service account, if it exists, otherwise it
-     * creates the organization service account. This API is idempotent and
-     * will only create a service account once. On subsequent calls it will
-     * return the previously created service account.  SHA, SCC and CTD Infra
-     * Automation will use this SA.  This SA will not have any permissions when
-     * created.  The UI will provision this via IAM or the user will using
-     * their own internal process. This API only creates SAs on the organization.
-     * Folders are not supported and projects will use per-project SAs associated
-     * with APIs enabled on a project. This API will be called by the UX
-     * onboarding workflow.
-     * </pre>
-     */
+    /** */
     public void getServiceAccount(
         com.google.cloud.securitycenter.settings.v1beta1.GetServiceAccountRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.securitycenter.settings.v1beta1.ServiceAccount>
@@ -812,13 +777,7 @@ public final class SecurityCenterSettingsServiceGrpc {
       asyncUnimplementedUnaryCall(getGetServiceAccountMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the Settings.
-     * </pre>
-     */
+    /** */
     public void getSettings(
         com.google.cloud.securitycenter.settings.v1beta1.GetSettingsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.securitycenter.settings.v1beta1.Settings>
@@ -826,13 +785,7 @@ public final class SecurityCenterSettingsServiceGrpc {
       asyncUnimplementedUnaryCall(getGetSettingsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the Settings.
-     * </pre>
-     */
+    /** */
     public void updateSettings(
         com.google.cloud.securitycenter.settings.v1beta1.UpdateSettingsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.securitycenter.settings.v1beta1.Settings>
@@ -840,33 +793,14 @@ public final class SecurityCenterSettingsServiceGrpc {
       asyncUnimplementedUnaryCall(getUpdateSettingsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Reset the organization, folder or project's settings and return
-     * the settings of just that resource to the default.
-     * Settings are present at the organization, folder, project, and cluster
-     * levels. Using Reset on a sub-organization level will remove that resource's
-     * override and result in the parent's settings being used (eg: if Reset on a
-     * cluster, project settings will be used).
-     * Using Reset on organization will remove the override that was set and
-     * result in default settings being used.
-     * </pre>
-     */
+    /** */
     public void resetSettings(
         com.google.cloud.securitycenter.settings.v1beta1.ResetSettingsRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getResetSettingsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of settings.
-     * </pre>
-     */
+    /** */
     public void batchGetSettings(
         com.google.cloud.securitycenter.settings.v1beta1.BatchGetSettingsRequest request,
         io.grpc.stub.StreamObserver<
@@ -875,23 +809,7 @@ public final class SecurityCenterSettingsServiceGrpc {
       asyncUnimplementedUnaryCall(getBatchGetSettingsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * CalculateEffectiveSettings looks up all of the Security Center
-     * Settings resources in the GCP resource hierarchy, and calculates the
-     * effective settings on that resource by applying the following rules:
-     *  * Settings provided closer to the target resource take precedence over
-     *    those further away (e.g. folder will override organization level
-     *    settings).
-     *  * Product defaults can be overridden at org, folder, project, and cluster
-     *  levels.
-     *  * Detectors will be filtered out if they belong to a billing tier the
-     *  customer
-     *    has not configured.
-     * </pre>
-     */
+    /** */
     public void calculateEffectiveSettings(
         com.google.cloud.securitycenter.settings.v1beta1.CalculateEffectiveSettingsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.securitycenter.settings.v1beta1.Settings>
@@ -899,13 +817,7 @@ public final class SecurityCenterSettingsServiceGrpc {
       asyncUnimplementedUnaryCall(getCalculateEffectiveSettingsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of effective settings.
-     * </pre>
-     */
+    /** */
     public void batchCalculateEffectiveSettings(
         com.google.cloud.securitycenter.settings.v1beta1.BatchCalculateEffectiveSettingsRequest
             request,
@@ -916,13 +828,7 @@ public final class SecurityCenterSettingsServiceGrpc {
       asyncUnimplementedUnaryCall(getBatchCalculateEffectiveSettingsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the Component Settings.
-     * </pre>
-     */
+    /** */
     public void getComponentSettings(
         com.google.cloud.securitycenter.settings.v1beta1.GetComponentSettingsRequest request,
         io.grpc.stub.StreamObserver<
@@ -931,13 +837,7 @@ public final class SecurityCenterSettingsServiceGrpc {
       asyncUnimplementedUnaryCall(getGetComponentSettingsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the Component Settings.
-     * </pre>
-     */
+    /** */
     public void updateComponentSettings(
         com.google.cloud.securitycenter.settings.v1beta1.UpdateComponentSettingsRequest request,
         io.grpc.stub.StreamObserver<
@@ -946,30 +846,14 @@ public final class SecurityCenterSettingsServiceGrpc {
       asyncUnimplementedUnaryCall(getUpdateComponentSettingsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Reset the organization, folder or project's component settings and return
-     * the settings to the default. Settings are present at the
-     * organization, folder and project levels. Using Reset for a folder or
-     * project will remove the override that was set and result in the
-     * organization-level settings being used.
-     * </pre>
-     */
+    /** */
     public void resetComponentSettings(
         com.google.cloud.securitycenter.settings.v1beta1.ResetComponentSettingsRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getResetComponentSettingsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the Effective Component Settings.
-     * </pre>
-     */
+    /** */
     public void calculateEffectiveComponentSettings(
         com.google.cloud.securitycenter.settings.v1beta1.CalculateEffectiveComponentSettingsRequest
             request,
@@ -979,13 +863,7 @@ public final class SecurityCenterSettingsServiceGrpc {
       asyncUnimplementedUnaryCall(getCalculateEffectiveComponentSettingsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves an unordered list of available detectors.
-     * </pre>
-     */
+    /** */
     public void listDetectors(
         com.google.cloud.securitycenter.settings.v1beta1.ListDetectorsRequest request,
         io.grpc.stub.StreamObserver<
@@ -994,13 +872,7 @@ public final class SecurityCenterSettingsServiceGrpc {
       asyncUnimplementedUnaryCall(getListDetectorsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves an unordered list of available SCC components.
-     * </pre>
-     */
+    /** */
     public void listComponents(
         com.google.cloud.securitycenter.settings.v1beta1.ListComponentsRequest request,
         io.grpc.stub.StreamObserver<
@@ -1111,17 +983,7 @@ public final class SecurityCenterSettingsServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * ## API Overview
-   * The SecurityCenterSettingsService is a sub-api of
-   * `securitycenter.googleapis.com`. The service provides methods to manage
-   * Security Center Settings, and Component Settings for GCP organizations,
-   * folders, projects, and clusters.
-   * </pre>
-   */
+  /** */
   public static final class SecurityCenterSettingsServiceStub
       extends io.grpc.stub.AbstractAsyncStub<SecurityCenterSettingsServiceStub> {
     private SecurityCenterSettingsServiceStub(
@@ -1135,22 +997,7 @@ public final class SecurityCenterSettingsServiceGrpc {
       return new SecurityCenterSettingsServiceStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves the organizations service account, if it exists, otherwise it
-     * creates the organization service account. This API is idempotent and
-     * will only create a service account once. On subsequent calls it will
-     * return the previously created service account.  SHA, SCC and CTD Infra
-     * Automation will use this SA.  This SA will not have any permissions when
-     * created.  The UI will provision this via IAM or the user will using
-     * their own internal process. This API only creates SAs on the organization.
-     * Folders are not supported and projects will use per-project SAs associated
-     * with APIs enabled on a project. This API will be called by the UX
-     * onboarding workflow.
-     * </pre>
-     */
+    /** */
     public void getServiceAccount(
         com.google.cloud.securitycenter.settings.v1beta1.GetServiceAccountRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.securitycenter.settings.v1beta1.ServiceAccount>
@@ -1161,13 +1008,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the Settings.
-     * </pre>
-     */
+    /** */
     public void getSettings(
         com.google.cloud.securitycenter.settings.v1beta1.GetSettingsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.securitycenter.settings.v1beta1.Settings>
@@ -1178,13 +1019,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the Settings.
-     * </pre>
-     */
+    /** */
     public void updateSettings(
         com.google.cloud.securitycenter.settings.v1beta1.UpdateSettingsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.securitycenter.settings.v1beta1.Settings>
@@ -1195,20 +1030,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Reset the organization, folder or project's settings and return
-     * the settings of just that resource to the default.
-     * Settings are present at the organization, folder, project, and cluster
-     * levels. Using Reset on a sub-organization level will remove that resource's
-     * override and result in the parent's settings being used (eg: if Reset on a
-     * cluster, project settings will be used).
-     * Using Reset on organization will remove the override that was set and
-     * result in default settings being used.
-     * </pre>
-     */
+    /** */
     public void resetSettings(
         com.google.cloud.securitycenter.settings.v1beta1.ResetSettingsRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -1218,13 +1040,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of settings.
-     * </pre>
-     */
+    /** */
     public void batchGetSettings(
         com.google.cloud.securitycenter.settings.v1beta1.BatchGetSettingsRequest request,
         io.grpc.stub.StreamObserver<
@@ -1236,23 +1052,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * CalculateEffectiveSettings looks up all of the Security Center
-     * Settings resources in the GCP resource hierarchy, and calculates the
-     * effective settings on that resource by applying the following rules:
-     *  * Settings provided closer to the target resource take precedence over
-     *    those further away (e.g. folder will override organization level
-     *    settings).
-     *  * Product defaults can be overridden at org, folder, project, and cluster
-     *  levels.
-     *  * Detectors will be filtered out if they belong to a billing tier the
-     *  customer
-     *    has not configured.
-     * </pre>
-     */
+    /** */
     public void calculateEffectiveSettings(
         com.google.cloud.securitycenter.settings.v1beta1.CalculateEffectiveSettingsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.securitycenter.settings.v1beta1.Settings>
@@ -1263,13 +1063,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of effective settings.
-     * </pre>
-     */
+    /** */
     public void batchCalculateEffectiveSettings(
         com.google.cloud.securitycenter.settings.v1beta1.BatchCalculateEffectiveSettingsRequest
             request,
@@ -1283,13 +1077,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the Component Settings.
-     * </pre>
-     */
+    /** */
     public void getComponentSettings(
         com.google.cloud.securitycenter.settings.v1beta1.GetComponentSettingsRequest request,
         io.grpc.stub.StreamObserver<
@@ -1301,13 +1089,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the Component Settings.
-     * </pre>
-     */
+    /** */
     public void updateComponentSettings(
         com.google.cloud.securitycenter.settings.v1beta1.UpdateComponentSettingsRequest request,
         io.grpc.stub.StreamObserver<
@@ -1319,17 +1101,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Reset the organization, folder or project's component settings and return
-     * the settings to the default. Settings are present at the
-     * organization, folder and project levels. Using Reset for a folder or
-     * project will remove the override that was set and result in the
-     * organization-level settings being used.
-     * </pre>
-     */
+    /** */
     public void resetComponentSettings(
         com.google.cloud.securitycenter.settings.v1beta1.ResetComponentSettingsRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -1339,13 +1111,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the Effective Component Settings.
-     * </pre>
-     */
+    /** */
     public void calculateEffectiveComponentSettings(
         com.google.cloud.securitycenter.settings.v1beta1.CalculateEffectiveComponentSettingsRequest
             request,
@@ -1358,13 +1124,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves an unordered list of available detectors.
-     * </pre>
-     */
+    /** */
     public void listDetectors(
         com.google.cloud.securitycenter.settings.v1beta1.ListDetectorsRequest request,
         io.grpc.stub.StreamObserver<
@@ -1376,13 +1136,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves an unordered list of available SCC components.
-     * </pre>
-     */
+    /** */
     public void listComponents(
         com.google.cloud.securitycenter.settings.v1beta1.ListComponentsRequest request,
         io.grpc.stub.StreamObserver<
@@ -1395,17 +1149,7 @@ public final class SecurityCenterSettingsServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * ## API Overview
-   * The SecurityCenterSettingsService is a sub-api of
-   * `securitycenter.googleapis.com`. The service provides methods to manage
-   * Security Center Settings, and Component Settings for GCP organizations,
-   * folders, projects, and clusters.
-   * </pre>
-   */
+  /** */
   public static final class SecurityCenterSettingsServiceBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<SecurityCenterSettingsServiceBlockingStub> {
     private SecurityCenterSettingsServiceBlockingStub(
@@ -1419,78 +1163,32 @@ public final class SecurityCenterSettingsServiceGrpc {
       return new SecurityCenterSettingsServiceBlockingStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves the organizations service account, if it exists, otherwise it
-     * creates the organization service account. This API is idempotent and
-     * will only create a service account once. On subsequent calls it will
-     * return the previously created service account.  SHA, SCC and CTD Infra
-     * Automation will use this SA.  This SA will not have any permissions when
-     * created.  The UI will provision this via IAM or the user will using
-     * their own internal process. This API only creates SAs on the organization.
-     * Folders are not supported and projects will use per-project SAs associated
-     * with APIs enabled on a project. This API will be called by the UX
-     * onboarding workflow.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.securitycenter.settings.v1beta1.ServiceAccount getServiceAccount(
         com.google.cloud.securitycenter.settings.v1beta1.GetServiceAccountRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetServiceAccountMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the Settings.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.securitycenter.settings.v1beta1.Settings getSettings(
         com.google.cloud.securitycenter.settings.v1beta1.GetSettingsRequest request) {
       return blockingUnaryCall(getChannel(), getGetSettingsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the Settings.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.securitycenter.settings.v1beta1.Settings updateSettings(
         com.google.cloud.securitycenter.settings.v1beta1.UpdateSettingsRequest request) {
       return blockingUnaryCall(getChannel(), getUpdateSettingsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Reset the organization, folder or project's settings and return
-     * the settings of just that resource to the default.
-     * Settings are present at the organization, folder, project, and cluster
-     * levels. Using Reset on a sub-organization level will remove that resource's
-     * override and result in the parent's settings being used (eg: if Reset on a
-     * cluster, project settings will be used).
-     * Using Reset on organization will remove the override that was set and
-     * result in default settings being used.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty resetSettings(
         com.google.cloud.securitycenter.settings.v1beta1.ResetSettingsRequest request) {
       return blockingUnaryCall(getChannel(), getResetSettingsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of settings.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.securitycenter.settings.v1beta1.BatchGetSettingsResponse
         batchGetSettings(
             com.google.cloud.securitycenter.settings.v1beta1.BatchGetSettingsRequest request) {
@@ -1498,23 +1196,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           getChannel(), getBatchGetSettingsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * CalculateEffectiveSettings looks up all of the Security Center
-     * Settings resources in the GCP resource hierarchy, and calculates the
-     * effective settings on that resource by applying the following rules:
-     *  * Settings provided closer to the target resource take precedence over
-     *    those further away (e.g. folder will override organization level
-     *    settings).
-     *  * Product defaults can be overridden at org, folder, project, and cluster
-     *  levels.
-     *  * Detectors will be filtered out if they belong to a billing tier the
-     *  customer
-     *    has not configured.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.securitycenter.settings.v1beta1.Settings calculateEffectiveSettings(
         com.google.cloud.securitycenter.settings.v1beta1.CalculateEffectiveSettingsRequest
             request) {
@@ -1522,13 +1204,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           getChannel(), getCalculateEffectiveSettingsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of effective settings.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.securitycenter.settings.v1beta1.BatchCalculateEffectiveSettingsResponse
         batchCalculateEffectiveSettings(
             com.google.cloud.securitycenter.settings.v1beta1.BatchCalculateEffectiveSettingsRequest
@@ -1537,26 +1213,14 @@ public final class SecurityCenterSettingsServiceGrpc {
           getChannel(), getBatchCalculateEffectiveSettingsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the Component Settings.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.securitycenter.settings.v1beta1.ComponentSettings getComponentSettings(
         com.google.cloud.securitycenter.settings.v1beta1.GetComponentSettingsRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetComponentSettingsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the Component Settings.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.securitycenter.settings.v1beta1.ComponentSettings
         updateComponentSettings(
             com.google.cloud.securitycenter.settings.v1beta1.UpdateComponentSettingsRequest
@@ -1565,30 +1229,14 @@ public final class SecurityCenterSettingsServiceGrpc {
           getChannel(), getUpdateComponentSettingsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Reset the organization, folder or project's component settings and return
-     * the settings to the default. Settings are present at the
-     * organization, folder and project levels. Using Reset for a folder or
-     * project will remove the override that was set and result in the
-     * organization-level settings being used.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty resetComponentSettings(
         com.google.cloud.securitycenter.settings.v1beta1.ResetComponentSettingsRequest request) {
       return blockingUnaryCall(
           getChannel(), getResetComponentSettingsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the Effective Component Settings.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.securitycenter.settings.v1beta1.ComponentSettings
         calculateEffectiveComponentSettings(
             com.google.cloud.securitycenter.settings.v1beta1
@@ -1598,42 +1246,20 @@ public final class SecurityCenterSettingsServiceGrpc {
           getChannel(), getCalculateEffectiveComponentSettingsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves an unordered list of available detectors.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.securitycenter.settings.v1beta1.ListDetectorsResponse listDetectors(
         com.google.cloud.securitycenter.settings.v1beta1.ListDetectorsRequest request) {
       return blockingUnaryCall(getChannel(), getListDetectorsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves an unordered list of available SCC components.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.securitycenter.settings.v1beta1.ListComponentsResponse listComponents(
         com.google.cloud.securitycenter.settings.v1beta1.ListComponentsRequest request) {
       return blockingUnaryCall(getChannel(), getListComponentsMethod(), getCallOptions(), request);
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * ## API Overview
-   * The SecurityCenterSettingsService is a sub-api of
-   * `securitycenter.googleapis.com`. The service provides methods to manage
-   * Security Center Settings, and Component Settings for GCP organizations,
-   * folders, projects, and clusters.
-   * </pre>
-   */
+  /** */
   public static final class SecurityCenterSettingsServiceFutureStub
       extends io.grpc.stub.AbstractFutureStub<SecurityCenterSettingsServiceFutureStub> {
     private SecurityCenterSettingsServiceFutureStub(
@@ -1647,22 +1273,7 @@ public final class SecurityCenterSettingsServiceGrpc {
       return new SecurityCenterSettingsServiceFutureStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves the organizations service account, if it exists, otherwise it
-     * creates the organization service account. This API is idempotent and
-     * will only create a service account once. On subsequent calls it will
-     * return the previously created service account.  SHA, SCC and CTD Infra
-     * Automation will use this SA.  This SA will not have any permissions when
-     * created.  The UI will provision this via IAM or the user will using
-     * their own internal process. This API only creates SAs on the organization.
-     * Folders are not supported and projects will use per-project SAs associated
-     * with APIs enabled on a project. This API will be called by the UX
-     * onboarding workflow.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.securitycenter.settings.v1beta1.ServiceAccount>
         getServiceAccount(
@@ -1671,13 +1282,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           getChannel().newCall(getGetServiceAccountMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the Settings.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.securitycenter.settings.v1beta1.Settings>
         getSettings(com.google.cloud.securitycenter.settings.v1beta1.GetSettingsRequest request) {
@@ -1685,13 +1290,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           getChannel().newCall(getGetSettingsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the Settings.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.securitycenter.settings.v1beta1.Settings>
         updateSettings(
@@ -1700,20 +1299,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           getChannel().newCall(getUpdateSettingsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Reset the organization, folder or project's settings and return
-     * the settings of just that resource to the default.
-     * Settings are present at the organization, folder, project, and cluster
-     * levels. Using Reset on a sub-organization level will remove that resource's
-     * override and result in the parent's settings being used (eg: if Reset on a
-     * cluster, project settings will be used).
-     * Using Reset on organization will remove the override that was set and
-     * result in default settings being used.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         resetSettings(
             com.google.cloud.securitycenter.settings.v1beta1.ResetSettingsRequest request) {
@@ -1721,13 +1307,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           getChannel().newCall(getResetSettingsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of settings.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.securitycenter.settings.v1beta1.BatchGetSettingsResponse>
         batchGetSettings(
@@ -1736,23 +1316,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           getChannel().newCall(getBatchGetSettingsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * CalculateEffectiveSettings looks up all of the Security Center
-     * Settings resources in the GCP resource hierarchy, and calculates the
-     * effective settings on that resource by applying the following rules:
-     *  * Settings provided closer to the target resource take precedence over
-     *    those further away (e.g. folder will override organization level
-     *    settings).
-     *  * Product defaults can be overridden at org, folder, project, and cluster
-     *  levels.
-     *  * Detectors will be filtered out if they belong to a billing tier the
-     *  customer
-     *    has not configured.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.securitycenter.settings.v1beta1.Settings>
         calculateEffectiveSettings(
@@ -1762,13 +1326,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           getChannel().newCall(getCalculateEffectiveSettingsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of effective settings.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.securitycenter.settings.v1beta1
                 .BatchCalculateEffectiveSettingsResponse>
@@ -1780,13 +1338,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the Component Settings.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.securitycenter.settings.v1beta1.ComponentSettings>
         getComponentSettings(
@@ -1795,13 +1347,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           getChannel().newCall(getGetComponentSettingsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates the Component Settings.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.securitycenter.settings.v1beta1.ComponentSettings>
         updateComponentSettings(
@@ -1811,17 +1357,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           getChannel().newCall(getUpdateComponentSettingsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Reset the organization, folder or project's component settings and return
-     * the settings to the default. Settings are present at the
-     * organization, folder and project levels. Using Reset for a folder or
-     * project will remove the override that was set and result in the
-     * organization-level settings being used.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         resetComponentSettings(
             com.google.cloud.securitycenter.settings.v1beta1.ResetComponentSettingsRequest
@@ -1830,13 +1366,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           getChannel().newCall(getResetComponentSettingsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the Effective Component Settings.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.securitycenter.settings.v1beta1.ComponentSettings>
         calculateEffectiveComponentSettings(
@@ -1848,13 +1378,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves an unordered list of available detectors.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.securitycenter.settings.v1beta1.ListDetectorsResponse>
         listDetectors(
@@ -1863,13 +1387,7 @@ public final class SecurityCenterSettingsServiceGrpc {
           getChannel().newCall(getListDetectorsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves an unordered list of available SCC components.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.securitycenter.settings.v1beta1.ListComponentsResponse>
         listComponents(

@@ -263,12 +263,22 @@ public class GrpcSecurityCenterSettingsServiceStub extends SecurityCenterSetting
         callableFactory);
   }
 
+  /**
+   * Constructs an instance of GrpcSecurityCenterSettingsServiceStub, using the given settings. This
+   * is protected so that it is easy to make a subclass, but otherwise, the static factory methods
+   * should be preferred.
+   */
   protected GrpcSecurityCenterSettingsServiceStub(
       SecurityCenterSettingsServiceStubSettings settings, ClientContext clientContext)
       throws IOException {
     this(settings, clientContext, new GrpcSecurityCenterSettingsServiceCallableFactory());
   }
 
+  /**
+   * Constructs an instance of GrpcSecurityCenterSettingsServiceStub, using the given settings. This
+   * is protected so that it is easy to make a subclass, but otherwise, the static factory methods
+   * should be preferred.
+   */
   protected GrpcSecurityCenterSettingsServiceStub(
       SecurityCenterSettingsServiceStubSettings settings,
       ClientContext clientContext,

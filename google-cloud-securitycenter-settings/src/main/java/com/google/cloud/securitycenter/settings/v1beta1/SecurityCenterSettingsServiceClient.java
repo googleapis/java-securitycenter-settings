@@ -299,7 +299,7 @@ public class SecurityCenterSettingsServiceClient implements BackgroundResource {
    *     `projects/{project}/locations/{location}/clusters/{cluster}/settings` &#42;
    *     `projects/{project}/regions/{region}/clusters/{cluster}/settings` &#42;
    *     `projects/{project}/zones/{zone}/clusters/{cluster}/settings`
-   * @param update_mask The list of fields to be updated on the settings.
+   * @param updateMask The list of fields to be updated on the settings.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Settings updateSettings(Settings settings, FieldMask updateMask) {
@@ -560,7 +560,7 @@ public class SecurityCenterSettingsServiceClient implements BackgroundResource {
   /**
    * Updates the Component Settings.
    *
-   * @param component_settings Required. The component settings to update.
+   * @param componentSettings Required. The component settings to update.
    *     <p>The component settings' `name` field is used to identify the component settings to be
    *     updated. Formats: &#42; `organizations/{organization}/components/{component}/settings`
    *     &#42; `folders/{folder}/components/{component}/settings` &#42;
@@ -569,7 +569,7 @@ public class SecurityCenterSettingsServiceClient implements BackgroundResource {
    *     &#42;
    *     `projects/{project}/regions/{region}/clusters/{cluster}/components/{component}/settings`
    *     &#42; `projects/{project}/zones/{zone}/clusters/{cluster}/components/{component}/settings`
-   * @param update_mask The list of fields to be updated on the component settings resource.
+   * @param updateMask The list of fields to be updated on the component settings resource.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final ComponentSettings updateComponentSettings(

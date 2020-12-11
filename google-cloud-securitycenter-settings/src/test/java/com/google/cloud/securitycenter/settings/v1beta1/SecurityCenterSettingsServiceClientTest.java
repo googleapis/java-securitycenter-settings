@@ -90,7 +90,7 @@ public class SecurityCenterSettingsServiceClientTest {
     ServiceAccount expectedResponse =
         ServiceAccount.newBuilder()
             .setName(ServiceAccountName.of("[ORGANIZATION]").toString())
-            .setServiceAccount("service_account-1948028253")
+            .setServiceAccount("serviceAccount1079137720")
             .build();
     mockSecurityCenterSettingsService.addResponse(expectedResponse);
 
@@ -129,7 +129,7 @@ public class SecurityCenterSettingsServiceClientTest {
     ServiceAccount expectedResponse =
         ServiceAccount.newBuilder()
             .setName(ServiceAccountName.of("[ORGANIZATION]").toString())
-            .setServiceAccount("service_account-1948028253")
+            .setServiceAccount("serviceAccount1079137720")
             .build();
     mockSecurityCenterSettingsService.addResponse(expectedResponse);
 
@@ -169,7 +169,7 @@ public class SecurityCenterSettingsServiceClientTest {
         Settings.newBuilder()
             .setName(SettingsName.ofOrganizationName("[ORGANIZATION]").toString())
             .setBillingSettings(BillingSettings.newBuilder().build())
-            .setOrgServiceAccount("org_service_account1798582088")
+            .setOrgServiceAccount("orgServiceAccount-1736642116")
             .setSinkSettings(SinkSettings.newBuilder().build())
             .putAllComponentSettings(new HashMap<String, ComponentSettings>())
             .putAllDetectorGroupSettings(new HashMap<String, Settings.DetectorGroupSettings>())
@@ -214,7 +214,7 @@ public class SecurityCenterSettingsServiceClientTest {
         Settings.newBuilder()
             .setName(SettingsName.ofOrganizationName("[ORGANIZATION]").toString())
             .setBillingSettings(BillingSettings.newBuilder().build())
-            .setOrgServiceAccount("org_service_account1798582088")
+            .setOrgServiceAccount("orgServiceAccount-1736642116")
             .setSinkSettings(SinkSettings.newBuilder().build())
             .putAllComponentSettings(new HashMap<String, ComponentSettings>())
             .putAllDetectorGroupSettings(new HashMap<String, Settings.DetectorGroupSettings>())
@@ -259,7 +259,7 @@ public class SecurityCenterSettingsServiceClientTest {
         Settings.newBuilder()
             .setName(SettingsName.ofOrganizationName("[ORGANIZATION]").toString())
             .setBillingSettings(BillingSettings.newBuilder().build())
-            .setOrgServiceAccount("org_service_account1798582088")
+            .setOrgServiceAccount("orgServiceAccount-1736642116")
             .setSinkSettings(SinkSettings.newBuilder().build())
             .putAllComponentSettings(new HashMap<String, ComponentSettings>())
             .putAllDetectorGroupSettings(new HashMap<String, Settings.DetectorGroupSettings>())
@@ -395,7 +395,7 @@ public class SecurityCenterSettingsServiceClientTest {
         Settings.newBuilder()
             .setName(SettingsName.ofOrganizationName("[ORGANIZATION]").toString())
             .setBillingSettings(BillingSettings.newBuilder().build())
-            .setOrgServiceAccount("org_service_account1798582088")
+            .setOrgServiceAccount("orgServiceAccount-1736642116")
             .setSinkSettings(SinkSettings.newBuilder().build())
             .putAllComponentSettings(new HashMap<String, ComponentSettings>())
             .putAllDetectorGroupSettings(new HashMap<String, Settings.DetectorGroupSettings>())
@@ -441,7 +441,7 @@ public class SecurityCenterSettingsServiceClientTest {
         Settings.newBuilder()
             .setName(SettingsName.ofOrganizationName("[ORGANIZATION]").toString())
             .setBillingSettings(BillingSettings.newBuilder().build())
-            .setOrgServiceAccount("org_service_account1798582088")
+            .setOrgServiceAccount("orgServiceAccount-1736642116")
             .setSinkSettings(SinkSettings.newBuilder().build())
             .putAllComponentSettings(new HashMap<String, ComponentSettings>())
             .putAllDetectorGroupSettings(new HashMap<String, Settings.DetectorGroupSettings>())
@@ -537,7 +537,7 @@ public class SecurityCenterSettingsServiceClientTest {
             .setName(
                 ComponentSettingsName.ofOrganizationComponentName("[ORGANIZATION]", "[COMPONENT]")
                     .toString())
-            .setProjectServiceAccount("project_service_account-1288322691")
+            .setProjectServiceAccount("projectServiceAccount79138097")
             .putAllDetectorSettings(new HashMap<String, ComponentSettings.DetectorSettings>())
             .setEtag("etag3123477")
             .setUpdateTime(Timestamp.newBuilder().build())
@@ -584,7 +584,7 @@ public class SecurityCenterSettingsServiceClientTest {
             .setName(
                 ComponentSettingsName.ofOrganizationComponentName("[ORGANIZATION]", "[COMPONENT]")
                     .toString())
-            .setProjectServiceAccount("project_service_account-1288322691")
+            .setProjectServiceAccount("projectServiceAccount79138097")
             .putAllDetectorSettings(new HashMap<String, ComponentSettings.DetectorSettings>())
             .setEtag("etag3123477")
             .setUpdateTime(Timestamp.newBuilder().build())
@@ -629,7 +629,7 @@ public class SecurityCenterSettingsServiceClientTest {
             .setName(
                 ComponentSettingsName.ofOrganizationComponentName("[ORGANIZATION]", "[COMPONENT]")
                     .toString())
-            .setProjectServiceAccount("project_service_account-1288322691")
+            .setProjectServiceAccount("projectServiceAccount79138097")
             .putAllDetectorSettings(new HashMap<String, ComponentSettings.DetectorSettings>())
             .setEtag("etag3123477")
             .setUpdateTime(Timestamp.newBuilder().build())
@@ -726,7 +726,7 @@ public class SecurityCenterSettingsServiceClientTest {
             .setName(
                 ComponentSettingsName.ofOrganizationComponentName("[ORGANIZATION]", "[COMPONENT]")
                     .toString())
-            .setProjectServiceAccount("project_service_account-1288322691")
+            .setProjectServiceAccount("projectServiceAccount79138097")
             .putAllDetectorSettings(new HashMap<String, ComponentSettings.DetectorSettings>())
             .setEtag("etag3123477")
             .setUpdateTime(Timestamp.newBuilder().build())
@@ -773,7 +773,7 @@ public class SecurityCenterSettingsServiceClientTest {
             .setName(
                 ComponentSettingsName.ofOrganizationComponentName("[ORGANIZATION]", "[COMPONENT]")
                     .toString())
-            .setProjectServiceAccount("project_service_account-1288322691")
+            .setProjectServiceAccount("projectServiceAccount79138097")
             .putAllDetectorSettings(new HashMap<String, ComponentSettings.DetectorSettings>())
             .setEtag("etag3123477")
             .setUpdateTime(Timestamp.newBuilder().build())

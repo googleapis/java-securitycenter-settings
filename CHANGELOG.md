@@ -1,5 +1,17 @@
 # Changelog
 
+### [0.4.1](https://www.github.com/googleapis/java-securitycenter-settings/compare/v0.4.0...v0.4.1) (2021-07-15)
+
+
+### Bug Fixes
+
+* Add `shopt -s nullglob` to dependencies script ([#326](https://www.github.com/googleapis/java-securitycenter-settings/issues/326)) ([1b5148e](https://www.github.com/googleapis/java-securitycenter-settings/commit/1b5148e0fbd0a50c6a0514efb55b30532d990117))
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v1.4.0 ([#329](https://www.github.com/googleapis/java-securitycenter-settings/issues/329)) ([4bff002](https://www.github.com/googleapis/java-securitycenter-settings/commit/4bff0021ff37bc985282e48d54e176a75170de72))
+
 ## [0.4.0](https://www.github.com/googleapis/java-securitycenter-settings/compare/v0.3.16...v0.4.0) (2021-06-17)
 
 

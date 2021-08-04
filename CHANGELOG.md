@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://www.github.com/googleapis/java-securitycenter-settings/compare/v0.4.0...v0.5.0) (2021-08-04)
+
+
+### Features
+
+* configure initial sp version ([#343](https://www.github.com/googleapis/java-securitycenter-settings/issues/343)) ([27317e1](https://www.github.com/googleapis/java-securitycenter-settings/commit/27317e1c6b3633e3f44211f15b9e46e9766fa7f3))
+
 ## [0.4.0](https://www.github.com/googleapis/java-securitycenter-settings/compare/v0.3.16...v0.4.0) (2021-06-17)
 
 

@@ -58,12 +58,12 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-cloud-securitycenter-settings-v1beta1</artifactId>
-        <version>0.5.2-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-securitycenter-settings-v1beta1:current} -->
+        <version>0.5.2</version><!-- {x-version-update:grpc-google-cloud-securitycenter-settings-v1beta1:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-cloud-securitycenter-settings-v1beta1</artifactId>
-        <version>0.5.2-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-securitycenter-settings-v1beta1:current} -->
+        <version>0.5.2</version><!-- {x-version-update:proto-google-cloud-securitycenter-settings-v1beta1:current} -->
       </dependency>
     </dependencies>
   </dependencyManagement>

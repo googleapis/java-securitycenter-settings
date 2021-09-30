@@ -22,20 +22,20 @@ If you are using Maven, add this to your pom.xml file:
 <dependency>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-securitycenter-settings</artifactId>
-  <version>0.5.3</version>
+  <version>0.5.5</version>
 </dependency>
 ```
 
 If you are using Gradle without BOM, add this to your dependencies
 
 ```Groovy
-implementation 'com.google.cloud:google-cloud-securitycenter-settings:0.5.3'
+implementation 'com.google.cloud:google-cloud-securitycenter-settings:0.5.5'
 ```
 
 If you are using SBT, add this to your dependencies
 
 ```Scala
-libraryDependencies += "com.google.cloud" % "google-cloud-securitycenter-settings" % "0.5.3"
+libraryDependencies += "com.google.cloud" % "google-cloud-securitycenter-settings" % "0.5.5"
 ```
 
 ## Authentication
@@ -186,10 +186,10 @@ Java is a registered trademark of Oracle and/or its affiliates.
 [developer-console]: https://console.developers.google.com/
 [create-project]: https://cloud.google.com/resource-manager/docs/creating-managing-projects
 [cloud-sdk]: https://cloud.google.com/sdk/
-[troubleshooting]: https://github.com/googleapis/google-cloud-common/blob/master/troubleshooting/readme.md#troubleshooting
-[contributing]: https://github.com/googleapis/java-securitycenter-settings/blob/master/CONTRIBUTING.md
-[code-of-conduct]: https://github.com/googleapis/java-securitycenter-settings/blob/master/CODE_OF_CONDUCT.md#contributor-code-of-conduct
-[license]: https://github.com/googleapis/java-securitycenter-settings/blob/master/LICENSE
+[troubleshooting]: https://github.com/googleapis/google-cloud-common/blob/main/troubleshooting/readme.md#troubleshooting
+[contributing]: https://github.com/googleapis/java-securitycenter-settings/blob/main/CONTRIBUTING.md
+[code-of-conduct]: https://github.com/googleapis/java-securitycenter-settings/blob/main/CODE_OF_CONDUCT.md#contributor-code-of-conduct
+[license]: https://github.com/googleapis/java-securitycenter-settings/blob/main/LICENSE
 
 [enable-api]: https://console.cloud.google.com/flows/enableapi?apiid=securitycenter-settings.googleapis.com
 [libraries-bom]: https://github.com/GoogleCloudPlatform/cloud-opensource-java/wiki/The-Google-Cloud-Platform-Libraries-BOM

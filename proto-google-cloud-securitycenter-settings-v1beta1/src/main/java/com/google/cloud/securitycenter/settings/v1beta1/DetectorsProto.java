@@ -42,8 +42,7 @@ public final class DetectorsProto {
     java.lang.String[] descriptorData = {
       "\n"
           + ";google/cloud/securitycenter/settings/v1beta1/detector.proto\022,google.cloud.secu"
-          + "ritycenter.settings.v1beta1\032\037google/api/"
-          + "field_behavior.proto\032Cgoogle/cloud/securitycenter/settings/v1beta1/billing_settings.proto\032\034google/api/annotations.proto\"\255\001\n"
+          + "ritycenter.settings.v1beta1\032\037google/api/field_behavior.proto\032Cgoogle/cloud/securitycenter/settings/v1beta1/billing_settings.proto\032\034google/api/annotations.proto\"\255\001\n"
           + "\010Detector\022\025\n"
           + "\010detector\030\001 \001(\tB\003\340A\003\022\026\n"
           + "\tcomponent\030\002 \001(\tB\003\340A\003\022T\n"

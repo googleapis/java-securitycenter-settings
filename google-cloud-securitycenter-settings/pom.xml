@@ -11,7 +11,7 @@
   <parent>
     <groupId>com.google.cloud</groupId>
     <artifactId>google-cloud-securitycenter-settings-parent</artifactId>
-    <version>0.6.7-SNAPSHOT</version><!-- {x-version-update:google-cloud-securitycenter-settings:current} -->
+    <version>0.7.0</version><!-- {x-version-update:google-cloud-securitycenter-settings:current} -->
   </parent>
   <properties>
     <site.installationModule>google-cloud-securitycenter-settings</site.installationModule>

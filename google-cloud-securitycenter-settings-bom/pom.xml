@@ -63,7 +63,7 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-cloud-securitycenter-settings-v1beta1</artifactId>
-        <version>0.7.0</version><!-- {x-version-update:proto-google-cloud-securitycenter-settings-v1beta1:current} -->
+        <version>0.6.7-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-securitycenter-settings-v1beta1:current} -->
       </dependency>
     </dependencies>
   </dependencyManagement>
